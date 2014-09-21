@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["romaimperator@gmail.com"]
   spec.summary       = %q{PureScript adapter for the Rails asset pipeline.}
   spec.description   = %q{PureScript adapter for the Rails asset pipeline.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/romaimperator/purescript-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,6 +18,5 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  s.add_development_dependency 'rails'
 end
