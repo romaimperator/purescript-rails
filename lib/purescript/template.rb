@@ -44,7 +44,7 @@ module PureScript
     end
 
     def evaluate(scope, locals, &block)
-      @output ||= `psc #{file}`
+      @output ||= `psc #{file} --main`
     end
 
     def allows_script?
