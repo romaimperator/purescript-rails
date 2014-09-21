@@ -1,6 +1,6 @@
 require "purescript/rails/version"
 
-module Purescript
+module PureScript
   module Rails
     # Your code goes here...
   end

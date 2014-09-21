@@ -5,7 +5,7 @@ require 'purescript/rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "purescript-rails"
-  spec.version       = Purescript::Rails::VERSION
+  spec.version       = PureScript::Rails::VERSION
   spec.authors       = ["Daniel Fox"]
   spec.email         = ["romaimperator@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
