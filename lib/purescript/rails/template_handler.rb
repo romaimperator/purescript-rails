@@ -8,7 +8,17 @@ module PureScript
 
       def self.call(template)
         compiled_source = erb_handler.call(template)
-        `psc --stdin #{compiled_source}`
+        Tempfile.open('purescript-', Rails.root.join('tmp')) do |f|
+          begin
+            f.write(compiled_source)
+            f.flush
+            output = `psc #{compiled_source} --main`
+          ensure
+            f.close
+            f.unlink
+          end
+        end
+        output
       end
     end
   end
