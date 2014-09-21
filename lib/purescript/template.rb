@@ -44,8 +44,6 @@ module PureScript
     end
 
     def evaluate(scope, locals, &block)
-      #@output ||= CoffeeScript.compile(data, options)
-      puts "Hellow"
       @output ||= `psc #{file}`
     end
 
@@ -54,6 +52,4 @@ module PureScript
     end
   end
 end
-
-#Rails.application.assets.register_engine(".purs", PureScript::Template)
 

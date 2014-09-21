@@ -1,5 +1,4 @@
-require 'tilt/purescript'
-require 'sprockets/railtie'
+require 'rails/engine'
 
 module PureScript
   module Rails
