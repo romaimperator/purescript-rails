@@ -1,8 +1,16 @@
 # Purescript::Rails
 
-TODO: Write a gem description
+Purescript adapter for the Rails asset pipeline.
 
 ## Installation
+
+This gem requires the PureScript compiler be available in your $PATH. You can
+find out how to install the PureScript compiler at
+http://docs.purescript.org/en/latest/start.html#compiler-installation
+
+The PureScript compiler requires the Haskell package manager "cabal" be
+installed. It comes with the Haskell compiler GHC which is available at
+http://www.haskell.org/haskellwiki/Haskell
 
 Add this line to your application's Gemfile:
 
@@ -18,12 +26,5 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/purescript-rails/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+To compile a PureScript file with the asset pipeline, add the file to the
+compile path and name like "my_script.js.purs".
